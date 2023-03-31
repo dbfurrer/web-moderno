@@ -14,7 +14,7 @@
     <div>2</div>
 
     <script>
-        $('div').hide(5000).show(5000).fadeOut(5000)
+        $('div').hide(5000).show(5000)//.fadeOut(5000)
         console.log($('div').get(1))
         console.log($.isEmptyObject({ nome: null }))
         console.log(jQuery.inArray(3, [1, 2, 3]))
@@ -24,6 +24,6 @@
             return this
         }
 
-        $('body').fundoVerde().fadeOut(1000)
+        $('body').fundoVerde().hide(5000).show(5000)
     </script>
 </body>

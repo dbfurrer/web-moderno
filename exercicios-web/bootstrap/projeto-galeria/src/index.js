@@ -1,7 +1,7 @@
-// Arquivos SASS
+// Arquivo SASS
 import './scss/index.scss'
 
-// Dependencias
+// Dependências
 import 'jquery'
 import 'bootstrap'
 

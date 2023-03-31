@@ -1,5 +1,0 @@
-import './cursos.html'
-import './index.html'
-import './inicio.html'
-import './sobre.html'
-import './suporte.html'
