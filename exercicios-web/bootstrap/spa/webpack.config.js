@@ -18,22 +18,29 @@ module.exports = {
         port: 9000
     },
     output: {
-        publicPath: '',
         filename: 'app.js',
         path: path.join(__dirname, 'build')
     },
     optimization: {
         minimize: true,
         minimizer: [
+            new CssMinimizerPlugin(),
             new TerserPlugin(),
-            new CssMinimizerPlugin()
-        ],
+            new HtmlWebpackPlugin({
+                template: "./src/index.html",
+                minify: {
+                    removeAttributeQuotes: true,
+                    collapseWhitespace: true,
+                    removeComments: true
+                }
+            })
+        ]
     },
     plugins: [
-        new HtmlWebpackPlugin(),
         new MiniCssExtractPlugin({ filename: 'estilo.css' }),
         new CopyWebpackPlugin({
             patterns: [
+                { context: 'src/', from: 'paginas/*.html' },
                 { context: 'src/', from: 'assets/imgs/*.*' }
             ]
         })
