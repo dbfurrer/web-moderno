@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <main className="" >
-      <span className="text-4xl">Texto</span>    
+      <span className="text-4xl">Texto A</span>    
     </main>
   )
 }
