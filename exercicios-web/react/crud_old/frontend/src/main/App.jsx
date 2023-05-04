@@ -17,4 +17,4 @@ export default props =>
             <Routes />
             <Footer />
         </div>
-    </BrowserRouter>
+    </BrowserRouter> 
